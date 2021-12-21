@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t nguyencung3/docker-react -f Dockerfile.dev .
